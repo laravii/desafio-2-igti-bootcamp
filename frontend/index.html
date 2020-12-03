@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Desafio 2 - Módulo 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-container">
+        <div class="search-input">
+          <input
+            type="search"
+            name="searchnames"
+            id="names"
+            placeholder="Pesquise um dev por nome"
+          />
+        </div>
+        <div class="search-options">
+          <div class="options">
+            <div class="option">
+              <input type="checkbox" name="language" id="java" value="Java" />
+              <label class="label" for="java">Java</label>
+            </div>
+            <div class="option">
+              <input
+                type="checkbox"
+                name="language"
+                id="js"
+                value="JavaScript"
+              />
+              <label class="label" for="js">JavaScript</label>
+            </div>
+            <div class="option">
+              <input
+                type="checkbox"
+                name="language"
+                id="python"
+                value="Python"
+              />
+              <label class="label" for="python">Python</label>
+            </div>
+          </div>
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="and-or-all" id="ou" value="or" />
+              <label class="label" for="ou">OU</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="and-or-all" id="e" value="and" />
+              <label class="label" for="e">E</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1><span id="devs-total"></span> Devs Encontrados</h1>
+      <div id="result-container"></div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
